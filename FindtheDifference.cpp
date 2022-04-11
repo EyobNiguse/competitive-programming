@@ -1,5 +1,3 @@
-#include<iostream>
-
 char findTheDifference(string s, string t) {
         int sumA = 0;
 int  sumB = 0 ;
