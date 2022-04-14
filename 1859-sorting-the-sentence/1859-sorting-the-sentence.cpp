@@ -1,9 +1,6 @@
 class Solution {
 public:
-    string sortSentence(string s) {
-     //collect the indexes 
-    // know the lendth of words 
-    
+    string sortSentence(string s) {  
     vector<string> str(10);
         string temp ="";
         string output ="";
@@ -30,8 +27,10 @@ public:
             return temp;
             
         }
-        //last Word 
-        int numb = getNum(s[s.length()-1]);
+        //last Word with no space
+        string tmp_string;
+        tmp_string.push_back(s[s.length()-1]);
+        int numb = stoi(tmp_string);
         string temp2 = "";
         int count = 0;
         while(int(s[s.length()-count]) != 32){
@@ -56,37 +55,5 @@ public:
             
     output.erase(output.length()-1,1);             
     return output;
-    }
-    int getNum(char s){
-        int num;
-        switch(s){
-                    case '1':
-                        num = 1;
-                        break;
-                    case '2':
-                        num = 2;
-                        break;
-                    case '3':
-                        num = 3; 
-                        break;
-                    case '4':
-                        num = 4;
-                        break;
-                         case '5':
-                        num = 5;
-                        break;
-                         case '6':
-                        num = 6;
-                        break; case '7':
-                        num = 7;
-                        break; case '8':
-                        num = 8;
-                        break;
-                         case '9':
-                        num = 9;
-                        break;                        
-                }
-        return num;
-           
     }
 };
