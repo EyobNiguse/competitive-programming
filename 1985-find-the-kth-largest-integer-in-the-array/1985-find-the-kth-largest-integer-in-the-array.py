@@ -10,5 +10,4 @@ class Solution(object):
         for x in nums:
             cpList.append(int(x))
         cpList.sort()
-
         return(str(cpList[len(cpList)-k]))
