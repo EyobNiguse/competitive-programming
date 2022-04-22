@@ -41,13 +41,13 @@ public:
               string firstOperand = stck.top();
               stck.pop();
               int value =  getValue(firstOperand,secondOperand,tokens[i]);
-             cout<< firstOperand <<" "<<  tokens[i] <<" " << secondOperand <<" \n";
+           
               
               stck.push(to_string(value));
-              cout<<"top \n"<<stck.top()<<"\n";
+             
              
           }
-             // cout<< stck.top() <<" ";
+            
         }          
        
      
