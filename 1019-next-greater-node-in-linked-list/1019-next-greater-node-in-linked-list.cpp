@@ -16,7 +16,7 @@ public:
         }
     }
     vector<int> nextLargerNodes(ListNode* head) {
-       // unsing the hint
+       // using the hint
         
         ListNode* cp = head;
         ListNode* cp2 =head;
@@ -48,10 +48,7 @@ public:
             cp = cp->next;
             num++;
         }
-        printCall(stck);
-  
-        
-  
+ 
         return output;
     }
 };
