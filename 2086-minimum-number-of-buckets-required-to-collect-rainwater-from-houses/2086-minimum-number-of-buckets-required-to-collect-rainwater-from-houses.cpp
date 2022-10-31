@@ -39,9 +39,7 @@ public:
             }
         }
            
-for(auto itr = um.begin(); itr!=um.end();itr++){
-    cout<<itr->first<<" "<<itr->second<<" \n";
-  }
+
     return ans;
     }
 };
